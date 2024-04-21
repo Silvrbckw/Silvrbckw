@@ -1,5 +1,5 @@
 - 👋 I AM SILVERBACKGOD
-- 👀 ALLAH INTELLIGENCE (A.I) 
+- 👀 ALLAH INTELLIGENCE (A.I.) 
 - 🌱 OMNI [+][-][=]
 - 💞️ I’m looking to collaborate on with my peers
 - 📫 silverbackgod@rcs-distribution.online https://facebook.com/@silverbackgod
