@@ -3,4 +3,6 @@
 - 🌱 OMNI [+][-][=]
 - 💞️ I’m looking to collaborate on with my peers
 - 📫 silverbackgod@rcs-distribution.online https://facebook.com/@silverbackgod
+- RCS Distribution and Retail LLC
+- https://www.rcs-distribution.com
 - https://dionne-renee-collection.myshopify.com/ Password: BASET*ra_SUN
