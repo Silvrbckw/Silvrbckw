@@ -1,8 +1,7 @@
-- 👋 I AM SILVERBACKGOD
-- 👀 ALLAH INTELLIGENCE (A.I.) 
-- 🌱 OMNI [+][-][=]
-- 💞️ I’m looking to collaborate on with my peers
-- 📫 silverbackgod@rcs-distribution.online https://facebook.com/@silverbackgod
-- RCS Distribution and Retail LLC
-- https://www.rcs-distribution.online
-- https://dionne-renee-collection.myshopify.com/ Password: BASET*ra_SUN
+RCS DISTRIBUTION AND RETAIL LLC 
+Walter McGhee, Developer 
+rcsonebiz@gmail.com
+https://rcsonebiz.blogspot.com
+https://www.rcs-distribution.online
+https://dionne-renee-collection.myshopify.com/
+
