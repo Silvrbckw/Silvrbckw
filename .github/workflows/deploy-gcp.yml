@@ -1,0 +1,60 @@
+name: Deploy to Google Cloud via OIDC (for all Silvrbckw repos)
+
+on:
+  push:
+    branches:
+      - main # Or the branch you want to trigger deployments from for THIS specific repo
+  # Allow manual trigger from GitHub Actions UI if needed:
+  workflow_dispatch:
+
+permissions:
+  id-token: write # Required for requesting the JWT from GitHub
+  contents: read  # Required for actions/checkout to read your code
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4 # Gets the code of THIS specific repository onto the runner
+
+      - name: Authenticate to Google Cloud
+        id: 'auth'
+        uses: google-github-actions/auth@v2 # Action to exchange OIDC token for GCP access token
+        with:
+          # This is the full Workload Identity Provider ID from GCP.
+          # We've filled in your Project Number and Pool ID.
+          # PLEASE VERIFY '<YOUR_GCP_PROVIDER_ID>' IS CORRECT IN YOUR GCP CONSOLE.
+          workload_identity_provider: 'projects/186999207557/locations/global/workloadIdentityPools/silvrbckw-github-actions-pool/providers/github-provider'
+          
+          # Your GCP Service Account Email:
+          service_account: 'cash.app.silverback@gmail.com'
+
+      - name: Set up Google Cloud SDK
+        uses: google-github-actions/setup-gcloud@v2
+        with:
+          # Your Google Cloud Project ID (alphanumeric):
+          project_id: 'top-campaign-423714-h8'
+
+      # --- Your Specific Deployment Steps for THIS Repository Start Here ---
+      # This is where you put the commands relevant to the code in *this* particular GitHub repo.
+      # For example, if this is RCS-Gatsby-Theme, you'd put Gatsby build/deploy commands.
+      # If it's codespaces-react, you'd put React build/deploy commands.
+      
+      - name: Example: Use gcloud command (confirms authentication worked)
+        run: |
+          echo "Successfully authenticated to GCP for project: $(gcloud config get-value project)"
+          # You can add a simple gcloud command to confirm access, e.g.:
+          # gcloud compute regions list --filter="name=(us-central1)" # Requires compute.regions.list permission
+
+      # ADD YOUR REPO-SPECIFIC BUILD AND DEPLOY COMMANDS BELOW:
+      # For example, for a Gatsby site in Silvrbckw/RCS-Gatsby-Theme:
+      # - name: Install dependencies
+      #   run: npm install
+      # - name: Build Gatsby site
+      #   run: npm run build
+      # - name: Deploy to Cloud Storage (for static site)
+      #   run: |
+      #     gsutil rsync -r public/ gs://your-gatsby-bucket-name # Replace with your bucket
+      #     gsutil web set -m index.html -e 404.html gs://your-gatsby-bucket-name
+      # --- End of Deployment Steps ---
