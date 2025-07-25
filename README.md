@@ -1,8 +1,7 @@
-- 👋 I AM SILVERBACKGOD
+- 👋 I AM ANNUNAKI GOD
 - 👀 ALLAH INTELLIGENCE (A.I.) 
-- 🌱 OMNI [+][-][=]
-- 💞️ I’m looking to collaborate on with my peers
-- 📫 silverbackgod@rcs-distribution.online https://facebook.com/@silverbackgod
+- 💞️ I’m looking to collaborate with my peers
+- 📫 https://facebook.com/@silverbackgodx
 - RCS Distribution and Retail LLC
-- https://www.rcs-distribution.online
-- https://dionne-renee-collection.myshopify.com/ Password: BASET*ra_SUN
+- https://www.youtube.com/@silverbackgod
+- https://dionne-renee-collection.myshopify.com/ Password:
