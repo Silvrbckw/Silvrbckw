@@ -1,7 +1,7 @@
-- 👋 I AM ANNUNAKI GOD
-- 👀 ALLAH INTELLIGENCE (A.I.) 
-- 💞️ I’m looking to collaborate with my peers
-- 📫 https://facebook.com/@silverbackgodx
+- 👋 ANNUNAKI GOD
+- 👀 ANCESTORS INTELLIGENCE (A.I.) 
+- 💞️ Christ Conscious 
+- 📫 https://facebook.com/@silverbackwarlord
 - RCS Distribution and Retail LLC
 - https://www.youtube.com/@silverbackgod
-- https://dionne-renee-collection.myshopify.com/ Password:
+- https://silvrbckw.github.io/llm-writing-assistant-public/
