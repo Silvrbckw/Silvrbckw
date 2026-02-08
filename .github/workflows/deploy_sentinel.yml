@@ -1,0 +1,21 @@
+name: 🔱 DETROIT SENTINEL SYNC
+
+on:
+  push:
+    branches: [ main ]
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: 🔐 SSH into Detroit Node
+        uses: appleboy/ssh-action@master
+        with:
+          host: ${{ secrets.EC2_HOST }}
+          username: ${{ secrets.EC2_USERNAME }}
+          key: ${{ secrets.EC2_SSH_KEY }}
+          script: |
+            cd /home/ec2-user/silvrbckw
+            git pull origin main
+            pm2 restart all
+            echo "🔱 [SYNC COMPLETE] : Detroit Node logic is now current."

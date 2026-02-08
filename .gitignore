@@ -1,8 +1,20 @@
-# 🔱 RCS SECURITY PROTOCOL
+# 🔱 SOVEREIGN RCS SECURITY PROTOCOL
+# ---------------------------------
+# Security: Never upload keys or secrets
+*.pem
+id_ed25519
+id_ed25519.pub
 .env
 .env.local
+secrets.json
+
+# Dependencies
 node_modules/
+.npm/
+package-lock.json
+
+# Build & System
 dist/
-*.log
 .vercel/
-# -------------------------
+*.log
+.DS_Store
