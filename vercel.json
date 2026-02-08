@@ -1,8 +1,9 @@
 {
   "version": 2,
+  "name": "silvrbckw-hq",
   "cleanUrls": true,
   "framework": null,
-  "buildCommand": null,
-  "installCommand": null,
+  "installCommand": "npm install",
+  "buildCommand": "echo 'Sovereign Build Initiated'",
   "outputDirectory": "."
 }

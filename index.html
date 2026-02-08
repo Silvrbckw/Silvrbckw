@@ -2,19 +2,24 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Silvrbckw | Sovereign Detroit Node</title>
+    <title>Silvrbckw | Detroit Node Alpha</title>
     <style>
-        body { background: #0a0a0a; color: #00ff41; font-family: 'Courier New', monospace; display: flex; align-items: center; justify-content: center; height: 100vh; margin: 0; }
-        .container { border: 1px solid #00ff41; padding: 2rem; box-shadow: 0 0 15px #00ff41; }
+        body { background: #050505; color: #00ff41; font-family: 'Courier New', monospace; display: flex; align-items: center; justify-content: center; height: 100vh; margin: 0; overflow: hidden; }
+        .terminal { border: 2px solid #00ff41; padding: 3rem; box-shadow: 0 0 30px rgba(0, 255, 65, 0.15); position: relative; width: 80%; max-width: 600px; }
+        .header { border-bottom: 1px solid #00ff41; padding-bottom: 1rem; margin-bottom: 1rem; font-weight: bold; letter-spacing: 5px; }
+        .log-entry { font-size: 0.9rem; margin: 5px 0; opacity: 0.8; }
         .blink { animation: b 1s infinite; }
         @keyframes b { 50% { opacity: 0; } }
     </style>
 </head>
 <body>
-    <div class="container">
-        <h1>Sovereign Node Alpha Active</h1>
-        <p>[STATUS] : SYNCHRONIZED</p>
-        <p>> Initializing Sentinel...<span class="blink">_</span></p>
+    <div class="terminal">
+        <div class="header">🔱 SILVRBCKW_NODE_ALPHA</div>
+        <p class="log-entry">> [LOC] : DETROIT_HQ_USA</p>
+        <p class="log-entry">> [NET] : SOVEREIGN_CLOUD_LINK</p>
+        <p class="log-entry">> [AI]  : SENTINEL_ACTIVE (GEMINI_2.5)</p>
+        <p class="log-entry">> [MSG] : Bridge to Africa status -> STABLE</p>
+        <p style="margin-top: 2rem;">SYSTEM_READY: Waiting for instructions<span class="blink">_</span></p>
     </div>
 </body>
 </html>
