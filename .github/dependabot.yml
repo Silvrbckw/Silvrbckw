@@ -1,0 +1,16 @@
+version: 2
+updates:
+  # 1. Monitor Node.js/NPM dependencies
+  - package-ecosystem: "npm" 
+    directory: "/" 
+    schedule:
+      interval: "daily" # Increased from weekly to daily for maximum protection
+    open-pull-requests-limit: 5
+    reviewers:
+      - "silvrbckw"
+
+  # 2. Monitor GitHub Actions (for your automated workflows)
+  - package-ecosystem: "github-actions"
+    directory: "/"
+    schedule:
+      interval: "weekly"
