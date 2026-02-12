@@ -10,7 +10,7 @@
   "license": "ISC",
   "description": "",
   "dependencies": {
-    "@ai-sdk/openai": "^3.0.26",
+    "@ai-sdk/openai": "^3.0.27",
     "ai": "^6.0.77",
     "dotenv": "^17.2.4",
     "vercel": "^50.13.2"
