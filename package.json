@@ -12,7 +12,7 @@
   "dependencies": {
     "@ai-sdk/openai": "^3.0.26",
     "ai": "^6.0.77",
-    "dotenv": "^17.2.4",
+    "dotenv": "^17.3.1",
     "vercel": "^50.13.2"
   }
 }
