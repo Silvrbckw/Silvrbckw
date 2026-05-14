@@ -1,44 +1,34 @@
-# 🔱 SILVERBACKGOD | RCS SOVEREIGN WEALTH
-### 🦍 *Architect of the Detroit-Africa Commodity Bridge*
-**DUNS: 064164611** | **Node: Sentinel Alpha** | **Year: 2026**
+# RCS DISTRIBUTION AND RETAIL, LLC
+### Strategic Infrastructure & Web3 Sovereign Gateway
+**Detroit, MI | D-U-N-S®: 06-416-4611**
 
 ---
 
-## 🏹 MISSION CRITICAL
-I am **SilverbackGod**, Lead Architect of the **Sovereign Fork**. We operate at the intersection of **Indigenous Land Sovereignty** and **Global African Commodity Liquidity**. 
+## 🏛 ENTERPRISE OVERVIEW
+RCS Distribution and Retail, LLC operates at the intersection of **Distributed Ledger Technology (DLT)** and **Institutional Asset Management**. We specialize in high-velocity infrastructure for commodity-backed wealth and indigenous resource transparency.
 
-While others chase speculative volatility, we build the **Hard Metal Bridge**—a high-velocity corridor for mineral-backed wealth repatriation.
+> **"Bridging legacy physical assets with digital-native finality."**
 
-> **"Sovereignty is indexed. Legacy is coded."**
+## 🛠 INFRASTRUCTURE & STACK
+Our operations utilize a private hardware configuration and enterprise-grade monitoring to maintain 99.9% uptime for Web3 services.
 
----
+* **Network Authority:** Blockchain Validator for decentralized indexing protocols (The Graph).
+* **Dapp Development:** Lead maintainer of the [Gemini Dapp Companion](https://geminidappcompanion.blogspot.com).
+* **Execution:** Automated asset scaling and reconciliation via sovereign gateways.
+* **Security:** AI-driven monitoring and private IPFS audit logging.
 
-## 🛠 2026 TECH STACK & ARCHITECTURE
-Our infrastructure is built for institutional-grade finality on the **Fusaka-era Ethereum** network.
-
-* **Validator Node:** Sentinel Alpha (Detroit-Africa Bridge)
-* **Indexing Architecture:** [The Graph](https://thegraph.com/) (Custom Subgraphs for Commodity Flow)
-* **Execution Layer:** Fusaka (Post-Merge Ethereum Bedrock)
-* **Liquidity Layer:** Hard Metal Tokenization (Gold, Silver, Bronze)
-* **Security:** AI-Driven Sentinel Monitoring via Vercel Enterprise
-
----
-
-## 📊 NODE TELEMETRY (LIVE STATUS)
-| System Component | Status | Network |
+## 📊 OPERATIONAL TELEMETRY
+| Component | Status | Framework |
 | :--- | :--- | :--- |
-| **NODE_ALPHA** | 🟢 OPERATIONAL | Mainnet |
-| **COMMODITY_BRIDGE** | ⚡ ACTIVE | Detroit <> Africa |
-| **SENTINEL_AI** | 🤖 SYNCHRONIZED | Gemini 2.0 |
+| **Sentinel Alpha** | 🟢 ACTIVE | Ethereum Mainnet |
+| **Asset Gateway** | ⚡ SYNCHRONIZED | Stripe <> Mercury |
+| **Identity Vault** | 🔒 SECURE | Local Private Node |
+
+## 📡 CONTACT & VERIFICATION
+* **Business Operations:** Detroit, Michigan
+* **Communications:** +1 (248) 382-8317 (WhatsApp Business / Google Voice)
+* **Verification:** [Etherscan Authority](https://etherscan.io/address/0x90c322e257f7c719fbcab6329684abfe50f348ed)
+* **Resource Center:** [Gemini Dapp Companion](https://geminidappcompanion.blogspot.com)
 
 ---
-
-## 📡 VERIFICATION & CONNECTIVITY
-* **Ethereum ID:** `0x90c322e257f7c719fbcab6329684abfe50f348ed`
-* **Etherscan:** [Verify Sentinel Authority](https://etherscan.io/address/0x90c322e257f7c719fbcab6329684abfe50f348ed)
-* **Gateway:** [Web3 Social Connect](https://web3-social-connect.web.app)
-* **Logs:** [Mastodon Sentinel Feed](https://mastodon.social/@rcsoneshop)
-
----
-© 2026 RCS Distribution and Retail, LLC | Detroit, MI
-*The Silverback builds the Fork.*
+© 2026 RCS Distribution and Retail, LLC. All Rights Reserved.
