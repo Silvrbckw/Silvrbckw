@@ -1,0 +1,12 @@
+{
+  "enterprise": "RCS DISTRIBUTION AND RETAIL, LLC",
+  "gateway_id": "DET-AFR-SENTINEL-01",
+  "telemetry_fields": {
+    "parcel_id": "unique_land_identifier",
+    "indigenous_status": "boolean",
+    "ownership_verified": "blockchain_hash",
+    "last_audit_date": "timestamp",
+    "public_record_link": "url"
+  },
+  "privacy_layer": "AES-256-GCM"
+}
