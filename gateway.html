@@ -1,82 +1,60 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE html>
-<html xmlns='http://www.w3.org/1999/xhtml' xmlns:b='http://www.google.com/2005/gml/b' xmlns:data='http://www.google.com/2005/gml/data' xmlns:expr='http://www.google.com/2005/gml/expr'>
+<html b:css='false' b:defaultwidgetversion='2' b:layoutsversion='3' xmlns='http://www.w3.org/1999/xhtml' xmlns:b='http://www.google.com/2005/gml/b' xmlns:data='http://www.google.com/2005/gml/data' xmlns:expr='http://www.google.com/2005/gml/expr'>
 <head>
+    <meta charset='UTF-8'/>
+    <meta content='width=device-width, initial-scale=1.0' name='viewport'/>
     <title>RCS Sovereign Gateway | Nara API Land Rights</title>
+    
     <b:skin><![CDATA[
-        :root { --gold: #D4AF37; --bg: #050505; --text: #e0e0e0; }
-        body { background: var(--bg); color: var(--text); font-family: 'Share Tech Mono', monospace; margin: 0; }
-        .enterprise-header { border-bottom: 2px solid var(--gold); padding: 30px; text-align: center; background: #1a1a1a; }
-        .nara-panel { border: 1px solid var(--gold); margin: 20px; padding: 20px; background: #111; text-align: center; min-height: 200px; }
-        .status-active { color: #00ff00; font-weight: bold; }
-        button { background: var(--gold); padding: 15px; border: none; cursor: pointer; font-weight: bold; text-transform: uppercase; font-family: 'Share Tech Mono', monospace; }
-        button:hover { background: #b8932d; }
-        #web3-portal { margin-top: 20px; line-height: 1.6; }
+        :root { --gold: #D4AF37; --bg: #0a0a0a; --text: #e0e0e0; }
+        body { background: var(--bg); color: var(--text); font-family: 'Share Tech Mono', monospace; margin: 0; padding: 20px; }
+        .nara-panel { border: 1px solid var(--gold); padding: 20px; background: #111; text-align: center; border-radius: 4px; }
+        .status-active { color: #00ff00; font-weight: bold; text-shadow: 0 0 5px #00ff00; }
+        .help-box { background: #1a1a1a; color: #e0e0e0; padding: 15px; margin: 20px auto; max-width: 550px; font-size: 0.9rem; border-left: 4px solid var(--gold); text-align: left; line-height: 1.5; }
+        button { background: var(--gold); padding: 15px 30px; border: none; cursor: pointer; font-weight: bold; text-transform: uppercase; transition: transform 0.2s; font-family: 'Share Tech Mono', monospace; }
+        button:hover { transform: scale(1.02); background: #f1c40f; }
     ]]></b:skin>
+    
     <link href='https://fonts.googleapis.com/css2?family=Share+Tech+Mono&amp;display=swap' rel='stylesheet'/>
 </head>
 <body>
-    <div class='enterprise-header'>
-        <h1>RCS DISTRIBUTION AND RETAIL, LLC</h1>
-        <p>Detroit-Africa Land Rights Gateway | D-U-N-S®: 06-416-4611</p>
-    </div>
-
+    <!-- Main UI -->
     <div class='nara-panel'>
-        <h2 style='color:var(--gold)'>NARA API INTEGRATION</h2>
+        <h2 style='color:var(--gold);'>SOVEREIGN LAND AUDIT</h2>
         <p>Status: <span class='status-active'>CONNECTED</span></p>
-        <p>Focus: Indigenous Land Right Verification &amp; Real Estate Telemetry</p>
         
-        <button onclick='initSovereignAudit()'>
-            Query Land Rights Data
-        </button>
+        <div class="help-box">
+            <strong style='color:var(--gold);'>What is a Parcel ID?</strong><br/>
+            This is a unique digital fingerprint for land found on:
+            <ul style='margin-top: 5px; padding-left: 20px;'>
+                <li>Your Annual Property Tax Statement</li>
+                <li>A recorded Warranty Deed or Quitclaim Deed</li>
+                <li>City Assessor portals (e.g., Detroit Property Search)</li>
+            </ul>
+            Entering this ID allows <strong>RCS Distribution and Retail, LLC</strong> to verify historical indigenous rights via the Nara API &amp; The Graph.
+        </div>
 
-        <!-- Discovery Panel Output Area -->
-        <div id='web3-portal'>
-            <p style='color:#555;'>Ready for Sovereign Audit input...</p>
+        <button onclick='initSovereignAudit()'>Query Land Rights Data</button>
+
+        <div id='web3-portal' style='margin-top: 20px;'>
+            <p style='color:#777;'>Ready for Sovereign Audit input...</p>
         </div>
     </div>
 
-    <div class='main-content'>
-        <b:section id='main' showaddelement='no'>
-            <b:widget id='Blog1' locked='true' title='Ledger Posts' type='Blog'/>
-        </b:section>
-    </div>
+    <!-- Required Blogger Section -->
+    <b:section id='main' showaddelement='yes'/>
 
-    <footer style='text-align:center; padding:40px; font-size:0.8rem; color:#555;'>
-        © 2026 RCS Distribution and Retail, LLC | D-U-N-S®: 06-416-4611
-    </footer>
-
-    <script>
-        async function initSovereignAudit() {
-            const portal = document.getElementById('web3-portal');
-            const parcelId = prompt("Enter Parcel ID for Sovereign Audit:");
-            
-            if (!parcelId) return;
-
-            // Initializing Handshake UI
-            portal.innerHTML = `
-                <div style="border: 1px dashed var(--gold); padding: 15px; background: #000;">
-                    <p style="color:var(--gold)">AUDITING PARCEL: \${parcelId}...</p>
-                    <div id="audit-results">
-                        <p>Status: <span style="color:#00ff00">HANDSHAKE INITIALIZED</span></p>
-                        <p>Verifying indigenous telemetry via Nara API...</p>
-                    </div>
-                </div>
-            `;
-
-            // Simulation of Nara Bridge Processing
-            setTimeout(() => {
-                const resultsContainer = document.getElementById('audit-results');
-                if (resultsContainer) {
-                    resultsContainer.innerHTML = `
-                        <p style="color:#00ff00; font-weight:bold;">[✓] AUDIT COMPLETE</p>
-                        <p><strong>Land Status:</strong> Historically Sovereign / Indigenous</p>
-                        <p><strong>Historical Context:</strong> Pre-Colonial Land Rights Detected. Restoration Path Verified.</p>
-                        <p style="font-size:0.7rem; color:#888; margin-top:10px;">Hash: 4faa43f15e39f2b13ac613351f005571ded12d1f</p>
-                    `;
-                }
-            }, 2000);
+    <script type='text/javascript'>
+        //<![CDATA[
+        function initSovereignAudit() {
+            const parcelId = prompt("Enter your Parcel ID (APN) to begin the audit:");
+            if (parcelId) {
+                document.getElementById('web3-portal').innerHTML = 
+                    `<p style='color:var(--gold)'>Initiating verify on: ${parcelId}...</p>`;
+            }
         }
+        //]]>
     </script>
 </body>
 </html>
