@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html>
+<html xmlns='http://www.w3.org/1999/xhtml' xmlns:b='http://www.google.com/2005/gml/b' xmlns:data='http://www.google.com/2005/gml/data' xmlns:expr='http://www.google.com/2005/gml/expr'>
+<head>
+    <title>RCS Sovereign Gateway | Nara API Land Rights</title>
+    <b:skin><![CDATA[
+        :root { --gold: #D4AF37; --bg: #050505; --text: #e0e0e0; }
+        body { background: var(--bg); color: var(--text); font-family: 'Share Tech Mono', monospace; margin: 0; }
+        .enterprise-header { border-bottom: 2px solid var(--gold); padding: 30px; text-align: center; background: #1a1a1a; }
+        .nara-panel { border: 1px solid var(--gold); margin: 20px; padding: 20px; background: #111; text-align: center; }
+        .status-active { color: #00ff00; font-weight: bold; }
+    ]]></b:skin>
+    <!-- The fix is below: & replaced with &amp; -->
+    <link href='https://fonts.googleapis.com/css2?family=Share+Tech+Mono&amp;display=swap' rel='stylesheet'/>
+</head>
+<body>
+    <div class='enterprise-header'>
+        <h1>RCS DISTRIBUTION AND RETAIL, LLC</h1>
+        <p>Detroit-Africa Land Rights Gateway | D-U-N-S®: 06-416-4611</p>
+    </div>
+
+    <div class='nara-panel'>
+        <h2 style='color:var(--gold)'>NARA API INTEGRATION</h2>
+        <p>Status: <span class='status-active'>CONNECTED</span></p>
+        <p>Focus: Indigenous Land Right Verification &amp; Real Estate Telemetry</p>
+        
+        <button onclick='initNaraInquiry()' style='background:var(--gold); padding:15px; border:none; cursor:pointer; font-weight:bold; text-transform:uppercase;'>
+            Query Land Rights Data
+        </button>
+    </div>
+
+    <div class='main-content'>
+        <b:section id='main' showaddelement='no'>
+            <b:widget id='Blog1' locked='true' title='Ledger Posts' type='Blog'/>
+        </b:section>
+    </div>
+
+    <footer style='text-align:center; padding:40px; font-size:0.8rem; color:#555;'>
+        © 2026 RCS Distribution and Retail, LLC | D-U-N-S®: 06-416-4611
+    </footer>
+
+    <script>
+        function initNaraInquiry() {
+            alert("Initializing Nara API secure handshake for land rights telemetry...");
+        }
+    </script>
+</body>
+</html>
