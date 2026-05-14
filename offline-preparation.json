@@ -1,0 +1,20 @@
+{
+  "version": "4",
+  "config_name": "mainnet",
+  "genesis_validators_root": "0xe34677b444a6037431a6bc1061f727df7ef1e741f4ccf52fe56b7e57a78e21f5",
+  "genesis_fork_version": "0x00000000",
+  "exit_fork_version": "0x03000000",
+  "fork_version": "0x03000000",
+  "current_fork_version": "0x04000000",
+  "bls_to_execution_change_domain_type": "0x0a000000",
+  "voluntary_exit_domain_type": "0x04000000",
+  "epoch": "290000",
+  "validators": [
+    {
+      "index": "327458",
+      "pubkey": "0x98cd119ccbde135d5e7540614a0264cec07a0515fc04c0ece4d5d205bd7aa8b7e393c88e4aaca027dfea8e639b88101e",
+      "withdrawal_credentials": "0x0089e02ef275608da97f39401732e6508c93b3c3e7465992b950882e70335e26",
+      "state": "withdrawal_possible"
+    }
+  ]
+}

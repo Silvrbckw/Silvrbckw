@@ -1,0 +1,39 @@
+/* Sovereign Gold Theme */
+:root {
+  --gold: #FFD700;
+  --dark-bg: #121212;
+  --text-dim: rgba(255, 255, 255, 0.7);
+}
+
+.gold-node-status {
+  background: var(--dark-bg);
+  border: 1px solid var(--gold);
+  color: var(--gold);
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 15px rgba(255, 215, 0, 0.2);
+}
+
+/* The Gold Pulse Animation */
+.pulse-icon {
+  width: 12px;
+  height: 12px;
+  background-color: var(--gold);
+  border-radius: 50%;
+  display: inline-block;
+  margin-right: 10px;
+  animation: pulse-gold 2s infinite;
+}
+
+@keyframes pulse-gold {
+  0% { transform: scale(0.95); box-shadow: 0 0 0 0 rgba(255, 215, 0, 0.7); }
+  70% { transform: scale(1); box-shadow: 0 0 0 10px rgba(255, 215, 0, 0); }
+  100% { transform: scale(0.95); box-shadow: 0 0 0 0 rgba(255, 215, 0, 0); }
+}
+
+footer {
+  color: var(--text-dim);
+  font-size: 0.8rem;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}

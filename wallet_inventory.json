@@ -1,0 +1,16 @@
+{
+  "wallet": "0x426ca4a1d4b739d7825adb9f8db67e37795d8bea",
+  "assets_found": [
+    {"name": "stETH (Lido)", "address": "0xae7ab96520de3a18e5e111b5eaab095312d7fe84", "status": "Liquid/Staked"},
+    {"name": "APE", "address": "0x4d224452801aced8b2f0aebe155379bb5d594381", "status": "Liquid"},
+    {"name": "HEX", "address": "0x2b591e99afe9f32eaa6214f7b7629768c40eeb39", "status": "Liquid"},
+    {"name": "EURS", "address": "0x8c1bed5b9a0928467c9b1341da1d7bd5e10b6549", "status": "Liquid"}
+  ],
+  "protocols": ["Lido", "Aave", "Uniswap V3", "0x Protocol"],
+  "business_links": {
+    "entity": "RCS DISTRIBUTION AND RETAIL, LLC",
+    "banking": "Mercury API",
+    "infrastructure": "The Graph (GRT)",
+    "pending_event": "Undelegation (June 2026)"
+  }
+}
