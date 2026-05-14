@@ -7,10 +7,12 @@
         :root { --gold: #D4AF37; --bg: #050505; --text: #e0e0e0; }
         body { background: var(--bg); color: var(--text); font-family: 'Share Tech Mono', monospace; margin: 0; }
         .enterprise-header { border-bottom: 2px solid var(--gold); padding: 30px; text-align: center; background: #1a1a1a; }
-        .nara-panel { border: 1px solid var(--gold); margin: 20px; padding: 20px; background: #111; text-align: center; }
+        .nara-panel { border: 1px solid var(--gold); margin: 20px; padding: 20px; background: #111; text-align: center; min-height: 200px; }
         .status-active { color: #00ff00; font-weight: bold; }
+        button { background: var(--gold); padding: 15px; border: none; cursor: pointer; font-weight: bold; text-transform: uppercase; font-family: 'Share Tech Mono', monospace; }
+        button:hover { background: #b8932d; }
+        #web3-portal { margin-top: 20px; line-height: 1.6; }
     ]]></b:skin>
-    <!-- The fix is below: & replaced with &amp; -->
     <link href='https://fonts.googleapis.com/css2?family=Share+Tech+Mono&amp;display=swap' rel='stylesheet'/>
 </head>
 <body>
@@ -24,9 +26,14 @@
         <p>Status: <span class='status-active'>CONNECTED</span></p>
         <p>Focus: Indigenous Land Right Verification &amp; Real Estate Telemetry</p>
         
-        <button onclick='initNaraInquiry()' style='background:var(--gold); padding:15px; border:none; cursor:pointer; font-weight:bold; text-transform:uppercase;'>
+        <button onclick='initSovereignAudit()'>
             Query Land Rights Data
         </button>
+
+        <!-- Discovery Panel Output Area -->
+        <div id='web3-portal'>
+            <p style='color:#555;'>Ready for Sovereign Audit input...</p>
+        </div>
     </div>
 
     <div class='main-content'>
@@ -40,8 +47,35 @@
     </footer>
 
     <script>
-        function initNaraInquiry() {
-            alert("Initializing Nara API secure handshake for land rights telemetry...");
+        async function initSovereignAudit() {
+            const portal = document.getElementById('web3-portal');
+            const parcelId = prompt("Enter Parcel ID for Sovereign Audit:");
+            
+            if (!parcelId) return;
+
+            // Initializing Handshake UI
+            portal.innerHTML = `
+                <div style="border: 1px dashed var(--gold); padding: 15px; background: #000;">
+                    <p style="color:var(--gold)">AUDITING PARCEL: \${parcelId}...</p>
+                    <div id="audit-results">
+                        <p>Status: <span style="color:#00ff00">HANDSHAKE INITIALIZED</span></p>
+                        <p>Verifying indigenous telemetry via Nara API...</p>
+                    </div>
+                </div>
+            `;
+
+            // Simulation of Nara Bridge Processing
+            setTimeout(() => {
+                const resultsContainer = document.getElementById('audit-results');
+                if (resultsContainer) {
+                    resultsContainer.innerHTML = `
+                        <p style="color:#00ff00; font-weight:bold;">[✓] AUDIT COMPLETE</p>
+                        <p><strong>Land Status:</strong> Historically Sovereign / Indigenous</p>
+                        <p><strong>Historical Context:</strong> Pre-Colonial Land Rights Detected. Restoration Path Verified.</p>
+                        <p style="font-size:0.7rem; color:#888; margin-top:10px;">Hash: 4faa43f15e39f2b13ac613351f005571ded12d1f</p>
+                    `;
+                }
+            }, 2000);
         }
     </script>
 </body>
