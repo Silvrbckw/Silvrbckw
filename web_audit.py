@@ -1,32 +1,38 @@
 import os
-from bs4 import BeautifulSoup
 
-def audit_gateway_html(file_path):
+# Define the restricted patterns based on your 2026 infrastructure
+RESTRICTED_SENSITIVE_DATA = [
+    "97f73216-e53e-11ee-bc08-7f627256a39a", # Mercury ID
+    "QmWFrrUNMGJ28GXuy3ohbQDNBVJ1nuGqU6D88o4ffJbZ8z", # Graph Deployment ID
+    "86063", # Graph User ID
+    "0x42", # Placeholder for your private wallet prefix
+    "NARA_API_KEY",
+    "CDP_API_KEY",
+    "PINATA_JWT",
+    "GEMINI_DAPP_COMPANION_KEY"
+]
+
+def run_enterprise_audit(file_path):
+    print(f"--- High-Security Audit: {file_path} ---")
+    if not os.path.exists(file_path):
+        print(f"[!] File {file_path} not found.")
+        return
+
     with open(file_path, 'r') as f:
-        soup = BeautifulSoup(f, 'html.parser')
-    
-    print(f"--- Auditing: {file_path} ---")
-    
-    # 1. SEO Check
-    title = soup.find('title')
-    if title:
-        print(f"[✓] Title Found: {title.text}")
-    else:
-        print("[!] MISSING: Title tag for SEO.")
-        
-    # 2. Performance Check (Internal CSS limit)
-    skin = soup.find('b:skin')
-    if skin and len(skin.text) > 5000:
-        print("[!] WARNING: CSS is getting heavy. Consider minifying.")
-    else:
-        print("[✓] CSS Payload: Optimized.")
+        content = f.read()
 
-    # 3. Privacy Check
-    if "0x42" in soup.get_text():
-        print("[CRITICAL] WARNING: Private Wallet Address detected in HTML!")
+    leaks_found = 0
+    for secret in RESTRICTED_SENSITIVE_DATA:
+        if secret in content:
+            print(f"[X] CRITICAL LEAK DETECTED: {secret}")
+            leaks_found += 1
+    
+    if leaks_found == 0:
+        print("[✓] Clean: No restricted addresses or enterprise keys found.")
     else:
-        print("[✓] Privacy: No restricted addresses found.")
+        print(f"[!] Audit Failed: {leaks_found} potential leaks identified.")
 
 if __name__ == "__main__":
-    # Point this to your Gateway HTML file
-    audit_gateway_html('gateway.html')
+    # Audit your public-facing files
+    run_enterprise_audit("gateway.html")
+    # run_enterprise_audit("nara_bridge.py")
